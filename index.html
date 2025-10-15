@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panto - Asthetic Furniture</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Panto - Aesthetic Furniture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -29,7 +28,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero-section">
             <div class="hero-content container">
                 <h1>Make Your Interior More Minimalistic & Modern</h1>
                 <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
@@ -37,10 +36,16 @@
                     <input type="text" placeholder="Search furniture">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
+                <div class="color-options">
+                    <button class="color-swatch active" data-color="orange" aria-label="Orange Sofa"></button>
+                    <button class="color-swatch" data-color="dark-grey" aria-label="Dark Grey Sofa"></button>
+                    <button class="color-swatch" data-color="brown" aria-label="Brown Sofa"></button>
+                </div>
             </div>
         </section>
-    <section class="choosing-us container">
-            <h2>Why Choosing Us</h2>
+
+        <section class="choosing-us container">
+            <h2 class="choosing-us-title">Why Choosing Us</h2>
             <div class="features">
                 <div class="feature-item">
                     <h3>Luxury facilities</h3>
@@ -57,39 +62,96 @@
             </div>
         </section>
 
-            <section class="best-selling container">
+        <section class="best-selling container">
             <h2>Best Selling Product</h2>
+            <div class="product-tabs">
+                <button class="tab-btn active">Chair</button>
+                <button class="tab-btn">Beds</button>
+                <button class="tab-btn">Sofa</button>
+                <button class="tab-btn">Lamp</button>
+            </div>
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card on-sale">
+                    <a href="#" class="category-link">Chair <i class="fa-solid fa-arrow-right"></i></a>
                     <img src="https://i.imgur.com/QpYkhUm.png" alt="Sakarias Armchair">
-                    <h3>Sakarias Armchair</h3>
-                    <p>₹392</p>
-                    <button>+</button>
+                    <div class="product-info">
+                        <h3>Sakarias Armchair</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <p>$ 392</p>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
                 </div>
+
                 <div class="product-card">
+                    <a href="#" class="category-link">Chair <i class="fa-solid fa-arrow-right"></i></a>
                     <img src="https://i.imgur.com/Kflr10Z.png" alt="Baltsar Chair">
-                    <h3>Baltsar Chair</h3>
-                    <p>₹299</p>
-                    <button>+</button>
+                    <div class="product-info">
+                        <h3>Baltsar Chair</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <p>$ 299</p>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
                 </div>
+
                 <div class="product-card">
-                    <img src="https://i.imgur.com/mOepxVI.png" alt="Anjay Chair">
-                    <h3>Anjay Chair</h3>
-                    <p>₹519</p>
-                    <button>+</button>
+                    <a href="#" class="category-link">Chair <i class="fa-solid fa-arrow-right"></i></a>
+                    <img src="https://i.imgur.com/FwWvG1Q.png" alt="Anjay Chair"> 
+                    <div class="product-info">
+                        <h3>Anjay Chair</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <p>$ 519</p>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
                 </div>
+
                 <div class="product-card">
+                    <a href="#" class="category-link">Chair <i class="fa-solid fa-arrow-right"></i></a>
                     <img src="https://i.imgur.com/JjVnJ0C.png" alt="Nyantuy Chair">
-                    <h3>Nyantuy Chair</h3>
-                    <p>₹921</p>
-                    <button>+</button>
+                    <div class="product-info">
+                        <h3>Nyantuy Chair</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <p>$ 921</p>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="experience container">
             <div class="experience-image">
-                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGZ1cm5pdHVyZXxlbnwwfHx8fDE2ODAwMDM0NTc&ixlib=rb-4.0.3&q=80&w=1080" alt="Modern living room">
+                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80" alt="Modern living room">
             </div>
             <div class="experience-text">
                 <p class="tagline">EXPERIENCE</p>
@@ -105,57 +167,53 @@
                 <p>Because panto is always concerned about the quality of the furniture provided, we always select materials with the best quality and durability for the furniture we make.</p>
             </div>
             <div class="materials-gallery">
-                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmdXJuaXR1cmV8ZW58MHx8fHwxNjgwMDAzNDU3&ixlib=rb-4.0.3&q=80&w=1080" alt="Material 1" class="img-1">
-                <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIyfHxmdXJuaXR1cmV8ZW58MHx8fHwxNjgwMDAzNDU4&ixlib=rb-4.0.3&q=80&w=1080" alt="Material 2" class="img-2">
-                <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI3fHxmdXJuaXR1cmV8ZW58MHx8fHwxNjgwMDAzNDU4&ixlib=rb-4.0.3&q=80&w=1080" alt="Material 3" class="img-3">
+                <img src="https://images.unsplash.com/photo-1517706781467-f0d85915d311?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kitchen Cabinets" class="img-1">
+                <img src="https://images.unsplash.com/photo-1519710898492-491b8a95d733?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Green Wall and Table" class="img-2">
+                <img src="https://images.unsplash.com/photo-1549488344-ecc99245e3a8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wooden Dining Set" class="img-3">
             </div>
         </section>
 
-        <section class="reviews container">
-            <p class="tagline">TESTIMONIALS</p>
-            <h2>Our Client Reviews</h2>
-            <div class="review-grid">
-                <div class="review-card">
-                    <img class="room-photo" src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&h=400&fit=crop" alt="Client's room">
-                    <p>"Panto is the best interior design and furniture platform I've ever used. The service is friendly and the results are very satisfying."</p>
-                    <div class="client-info">
-                        <img class="client-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
-                        <div>
-                            <h4>John Doe</h4>
-                            <p>CEO of Google</p>
-                        </div>
+        <section class="testimonials">
+            <div class="container">
+                <p class="tagline">TESTIMONIALS</p>
+                <h2>Our Client Reviews</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <img src="https://placehold.co/100x100/E58411/fff?text=P" alt="Client 1" class="client-photo">
+                        <p class="review-text">
+                            "This is an amazing service! The team was incredibly helpful and delivered exactly what we needed. Highly recommended to everyone."
+                        </p>
+                        <h4 class="client-name">Priya Sharma</h4>
+                        <p class="client-title">Marketing Head, Creative Solutions</p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <img class="room-photo" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&h=400&fit=crop" alt="Client's room">
-                    <p>"My house now looks so beautiful and modern thanks to Panto. I am very happy with the service and the quality of the products."</p>
-                    <div class="client-info">
-                        <img class="client-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2">
-                        <div>
-                            <h4>Jane Smith</h4>
-                            <p>Product Manager</p>
-                        </div>
+                    <div class="testimonial-card">
+                        <img src="https://placehold.co/100x100/E58411/fff?text=R" alt="Client 2" class="client-photo">
+                        <p class="review-text">
+                            "Working with them was a fantastic experience. Their attention to detail and commitment to quality is second to none. Our project was a huge success!"
+                        </p>
+                        <h4 class="client-name">Rahul Verma</h4>
+                        <p class="client-title">Founder, Tech Innovators</p>
                     </div>
-                </div>
-                <div class="review-card">
-                    <img class="room-photo" src="https://images.unsplash.com/photo-1558991374-15b59a0572e3?w=500&h=400&fit=crop" alt="Client's room">
-                    <p>"Highly recommended for those who want to change the appearance of their home. Fast, professional, and satisfying results!"</p>
-                    <div class="client-info">
-                        <img class="client-avatar" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client 3">
-                        <div>
-                            <h4>Michael Johnson</h4>
-                            <p>Architect</p>
-                        </div>
+                    <div class="testimonial-card">
+                        <img src="https://placehold.co/100x100/E58411/fff?text=A" alt="Client 3" class="client-photo">
+                        <p class="review-text">
+                            "A truly professional and efficient team. They understood our vision perfectly and brought it to life. We couldn't be happier with the results."
+                        </p>
+                        <h4 class="client-name">Anjali Mehta</h4>
+                        <p class="client-title">CEO, BrightFuture Inc.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
     </main>
+
 
     <footer>
         <div class="footer-content container">
             <div class="footer-about">
-                <h2>Funto</h2>
+                <h2>Panto</h2>
                 <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
             </div>
             <div class="footer-links">
@@ -176,12 +234,21 @@
             </div>
             <div class="footer-social">
                 <h4>Follow Us</h4>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>Copyright©️2025</p>
+            <div class="privacy-terms">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
             </div>
         </div>
     </footer>
-
+    
 </body>
 </html>
